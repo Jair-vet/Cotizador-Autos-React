@@ -5,7 +5,11 @@ const CotizadorContext = createContext()
 const CotizadorProvider = ({children}) => {
 
     return(
-        <CotizadorContext.Provider>
+        <CotizadorContext.Provider
+            value={{
+                
+            }}
+        >
             {children}
         </CotizadorContext.Provider>
     )
