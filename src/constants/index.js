@@ -3,3 +3,6 @@ export const MARCAS = [
     {id: 2, nombre: 'Americano'},
     {id: 3, nombre: 'Asiatico'},
 ]
+
+const YEARMAX = new Date().getFullYear();
+export const YEARS = Array.from(new Array(25), (valor, index) => YEARMAX -index)
