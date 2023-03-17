@@ -1,4 +1,5 @@
 import { AppSeguro } from "./components/AppSeguro"
+import { CotizadorProvider } from "./context/CotizadorProvider"
 
 
 function App() {
@@ -6,7 +7,9 @@ function App() {
 
   return (
     <>
-      <AppSeguro />
+      <CotizadorProvider>
+        <AppSeguro />
+      </CotizadorProvider>
     </>
   )
 }
