@@ -10,6 +10,8 @@ const CotizadorProvider = ({children}) => {
         plan: '',
     })
 
+    const [error, setError] = useState(false)
+
     const handleChangeDatos = e => {
         setDatos({
             ...datos,  // Tomar una copia
@@ -21,7 +23,9 @@ const CotizadorProvider = ({children}) => {
         <CotizadorContext.Provider
             value={{
                 datos,
-                handleChangeDatos
+                handleChangeDatos,
+                error,
+                setError,
             }}
         >
             {children}
