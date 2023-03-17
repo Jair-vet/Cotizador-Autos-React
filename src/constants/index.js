@@ -6,3 +6,8 @@ export const MARCAS = [
 
 const YEARMAX = new Date().getFullYear();
 export const YEARS = Array.from(new Array(25), (valor, index) => YEARMAX -index)
+
+export const PLANES = [
+    {id: 1, nombre: 'Básico'},
+    {id: 2, nombre: 'Completo'},
+]
