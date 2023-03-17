@@ -1,3 +1,4 @@
+import { AppSeguro } from "./components/AppSeguro"
 
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
 
   return (
     <>
-      <h1 className="text-2xl">Hola desde React</h1>
+      <AppSeguro />
     </>
   )
 }
