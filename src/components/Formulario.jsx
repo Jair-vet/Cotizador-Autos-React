@@ -54,7 +54,7 @@ export const Formulario = () => {
                 <label className="block mb-3 font-bold text-gray-400 uppercase">
                     Marca
                 </label>
-                <div className="flex gap-3">
+                <div className="flex gap-3 items-center">
                     {PLANES.map(plan => (
                         <Fragment key={plan.id}>
                             <label>
@@ -69,6 +69,12 @@ export const Formulario = () => {
                     ))}
                 </div>
             </div>
+
+            <input 
+                type="submit" 
+                className='w-full bg-emerald-500 hover:bg-emerald-600 p-2 rounded-lg text-white cursor-pointer uppercase font-bold'
+                value="Cotizar"
+            />
         </form>
 
     </>
