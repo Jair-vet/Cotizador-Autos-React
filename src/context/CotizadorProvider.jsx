@@ -1,5 +1,5 @@
 import { createContext, useState } from 'react'
-import { calcularMarca, calcularPlan, obtenerDiferenciaYear } from '../helpers'
+import { calcularMarca, calcularPlan, formatearDinero, obtenerDiferenciaYear } from '../helpers'
 
 const CotizadorContext = createContext()
 
@@ -39,7 +39,8 @@ const CotizadorProvider = ({children}) => {
         // Completo 50% 
         resultado *= calcularPlan(datos.plan)
 
-        resultado = resultado.toFixed(2)
+        // Formatear Dinero
+        resultado = formatearDinero(resultado)
         console.log(resultado);
     }
 
